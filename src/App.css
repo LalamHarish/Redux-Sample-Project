@@ -1,38 +1,124 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading {
   text-align: center;
+  margin: 10px;
+  color: rgb(186, 138, 6);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerNavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 2px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.postSection {
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.postContent {
+  margin: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.userActions{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.userButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Blue color */
+  color: #ffffff; /* White color */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.postResults {
+  margin-top: 10px;
+  width: 40vw;
+}
+.userSection {
+  width: auto;
+  height: 40%;
+  border: 1px solid black;
+}
+.commentSection {
+  height: 40%;
+  border: 1px solid black;
+}
+/* UserForm.css */
+.userForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userForm input[type='text'] {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; 
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+/* Style for the submit button */
+.submitButton {
+  margin-top: 20px; /* Space between the input and the button */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 18px; /* Font size */
+  background-color: #0079b3; /* Background color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  cursor: pointer; /* Cursor style */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.commentForm {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.commentForm textarea {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.commentForm .submitButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #0079b3;
   color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.commentForm .submitButton:hover {
+  background-color: #005f8a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
